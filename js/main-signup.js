@@ -99,6 +99,18 @@
         else alert('Only maximum of 5 can be added.');
     });
 
+
+    $dc.on("click", "#faf-s-w-add-loc", function(){
+        if (addexp<=50){
+
+            $('.faf-signup-w-loc1').before($('<div>').fadeOut(0).fadeIn().load('sign-up-work-cc.html .faf-signup-w-loc-hid'));
+
+            addexp++;
+            return false;
+        }
+        else alert('Only maximum of 5 can be added.');
+    });
+
    
     $dc.on("click", "#faf-s-w-add-cert", function(){
         if (addcert<=50){
@@ -159,6 +171,12 @@
          $('.faf-buble-replace').text('"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."');
     });
 
+    $dc.on("click", ".faf-signup-w-loc-hid", function(){
+         slideSpeech(this);
+         $('.faf-buble-replace').text('"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."');
+    });
+
+
     $dc.on("click", ".faf-signup-w-type ", function(){
          slideSpeech(this);
          $('.faf-buble-replace').text('"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? "');         
@@ -195,10 +213,19 @@
     });
 
     $dc.on("click", ".faf-signup-w-cert-u-hid", function(){
-        var position = $('.faf-signup-w-cert-upload');
-        slideSpeech(position);
+        // var position = $('.faf-signup-w-cert-upload');
+        // slideSpeech(position);
+        slideSpeech(this);
         $('.faf-buble-replace').text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat, est laborum"');  
     });
+
+    $dc.on("click", ".faf-signup-w-summary", function(){
+        slideSpeech(this);
+        $('.faf-buble-replace').text('"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."');  
+    });
+
+
+
 
 // $(".faf-signup-w-exp").fadeOut(0).fadeIn().append("sign-up-work-pd.html .faf-signup-w-exp");  
 // $(".faf-signup-w-exp").load("sign-up-work-cc.html .faf-signup-w-exp");
@@ -220,7 +247,6 @@
 //     alert("Hello!");
 // }); 
 
-
 // $(document).on("click", "#faf-s-w-add-exp", function(){
 //     alert("Hello!");
 // });
@@ -228,7 +254,6 @@
 // if ($('[optradio="faf-signup-w-industry-radio1"]').is(':checked')){ 
 //     $("#faf-signup-w-body").load("sign-up-work-cc.html"); 
 // }); 
-
 
     //end load html
 
@@ -242,7 +267,15 @@
 
 })();
 
-
 $(window).load(function () {
-        $('#dp1').datepicker({format: 'dd-mm-yyyy'});
+    $('#dp1').datepicker({format: 'dd-mm-yyyy'});
+    $('#dp2').datepicker({format: 'dd-mm-yyyy'});
+    $('#dp3').datepicker({format: 'dd-mm-yyyy'});
+
+
+//bkLib.onDomLoaded(function() {
+    new nicEditor({iconsPath : 'images/nicEditorIcons.gif'}).panelInstance('area1');
+
+// });
+        
 });

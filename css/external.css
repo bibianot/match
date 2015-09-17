@@ -1687,7 +1687,27 @@ select, input[type=text]{
 
 }
 
+.textcenter{
+  text-align: center;
+}
 
+.faf-signup-w-summary{
+  font-weight: normal;
+  min-height: 350px;
+}
+
+div.faf-whitebg{
+  background-color: #ffffff;
+  width: 513px;
+}
+
+.nicEdit-main:focus, .nicEdit-main:active{
+   outline: 0;
+}
+
+textarea#area1{
+  height: 300px;
+}
 
 /* BOOTSTRAP ICON INTEGRATION IN TEXTBOX START RIGHT */
 .faf-right-inner-addon {
@@ -1706,7 +1726,7 @@ select, input[type=text]{
 
 /*reset divs start */
 
-.faf-signup-w-exp1, .faf-signup-w-cert-u1{
+.faf-signup-w-exp1, .faf-signup-w-cert-u1, .faf-signup-w-loc1{
   padding: 0 !important;
   margin: 0 !important;
   background-color: #e3ecfa !important;
