@@ -1,0 +1,1726 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700italic,700,900);
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: 'Lato', sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-weight:400;
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+html,
+body{
+  min-height: 100%;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+input[type="radio"] {
+    outline: none !important;
+}
+
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+
+/* CLEARFIX */
+
+/* new clearfix */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* Clearfix end */
+
+
+
+
+
+body {
+  background-color: #eff1f6; 
+}
+
+
+.navbar-inverse {
+    background-color: #010b32;
+    border-color: #010b32;
+}
+
+.faf-join-btn-header,
+.faf-logo,
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+
+.faf-logo{
+  margin-left: 30px;
+}
+
+.faf-join-btn-header{
+  margin-right: 20px;
+}
+
+span.faf-join-btn{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+div.faf-login-text{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 60px;
+  padding-right: 30px;
+
+}
+
+div.faf-login-text a{
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+div.faf-login-text a:hover, div.faf-login-text a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+}
+
+#faf-main-container{
+  padding-top: 60px;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: 300;
+  padding: 0px;
+  margin: 0px;
+}
+
+span.faf-h1-normal-italic{
+  font-weight: 400;
+  font-style: italic;
+}
+
+.faf-h1-text{
+  text-align: center;
+  color: #fff;
+  padding-top: 170px;
+ }
+
+#faf-main-banner{
+  background-image: url("../images/banner.jpg");
+  width: 100%;
+  height: 575px;
+  z-index: 1;
+  position: relative;
+}
+
+.faf-join-main-text{
+  font-size: 27px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+}
+
+.faf-btn-main-join{
+  width: 251px;
+  height: 63px;
+  background-image: url("../images/main-join-button.jpg");
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.faf-italic{
+  font-style: italic;
+}
+
+.faf-banner-sub-header{
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#faf-container-02{
+  background-color: #e6e8ee; 
+  z-index: 2;
+  position: relative;
+  min-height:1800px;
+  width: 100%;
+}
+
+#faf-container-02{
+  width: 100%;
+}
+
+#faf-container-02 > div:first-child{
+/*  margin: 0 auto;
+  max-width: 1170px;*/
+}
+
+#faf-container-02 > div:nth-child(2){
+  background-color: #2657a0;  
+  width: 100%;
+}
+
+
+.faf-container-01-a, .faf-container-02-a, .faf-container-03-a{
+  min-height: 350px;
+  max-width: 1170px;
+  margin: 0 auto;  
+}
+
+.faf-container-04-a{
+  min-height: 250px;
+  max-width: 1170px;
+  margin: 0 auto;  
+}
+
+.faf-container-05-a, .faf-container-05-b > div{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;  
+  min-height: 200px;
+  max-width: 1170px;
+  margin: 0 auto;    
+}
+
+.faf-banner-sub-header-text{
+  font-size: 30px;
+}
+
+.faf-featured-fl-text{
+  height: 230px;
+  max-width: 470px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.faf-featured-fl{
+  background-image: url("../images/featured-fl.png");
+  width: 482px;
+  height: 276px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px
+}
+
+.row{  
+  width: 100%;
+  /*min-height: 350px;*/
+  margin: 0 !important;
+}
+
+.row:nth-child(3){  
+  width: 100%;
+  /*min-height: 396px;*/
+  background-color: #ffffff;    
+}
+
+.row:nth-child(4){  
+  width: 100%;
+  min-height: 150px;
+  background-color: #e6e8ee ;
+}
+
+/*#eff1f6*/
+
+.row:nth-child(5){  
+  width: 100%;
+  min-height: 500px;
+  background-color: #01061b;
+}
+
+
+.faf-featured-fl-text > div:first-child{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.faf-featured-fl-text > div:nth-child(2){
+  padding-top: 18px;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.faf-featured-fl-text-2{
+  min-height: 300px;
+}
+
+.faf-featured-fl-text-2 > div:first-child{
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.faf-featured-fl-text-2 > div:nth-child(2){
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.faf-featured-fl-text-2 > div:first-child::before { 
+    content: "\201C";
+    position: absolute;
+    left:-40px;
+    top:10px;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+
+#faf-container-02-b{
+  width: 100%;
+  background-color: #2657a0;
+  min-height: 350px;  
+}
+
+.faf-circle{
+  width: 79px;
+  height: 78px;
+  background: url(../images/social-icons.png) -530px 0px;
+  line-height: 80px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 auto;
+   margin-top:40px;
+}
+
+.vp-hidden{
+  opacity: 0;
+}
+
+.vp-visible{
+  opacity: 1;
+}
+
+div.faf-container-02-a > div > div > div > div{
+  text-align: center;
+}
+
+div.faf-container-02-a > div > div > div > div:first-child{
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 15px;
+
+}
+
+div.faf-container-02-a > div > div > div > div:nth-child(2) {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d4d4d4;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.faf-join-btn-pick{
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 111px;
+  height: 39px;
+  margin-bottom: 30px;
+}
+
+.faf-join-btn-pick > button > span {
+    font-size: 20px;
+    font-weight: 900;
+    color: #2657a0;
+}
+
+.faf-join-btn-get{
+  margin: 0 auto;
+}
+
+.faf-featured-fl-text-2{
+  height: 230px;
+  max-width: 470px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.faf-featured-fl-2{
+  background-image: url("../images/featured-fl-2.jpg");
+  width: 592px;
+  height: 396px;
+  margin: auto;
+}
+
+/*.col-xs-5, .col-xs-2, .col-xs-6{
+  margin: 0px;
+  padding: 0px;
+}*/
+
+.navbar-toggle{
+  margin-top: 13px;
+}
+
+.faf-container-04-a > div > div{
+  text-align: center;  
+  font-size: 35px;
+  font-weight: 900;
+  padding-top: 70px;
+}
+
+.faf-join-btn-get > button > span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.faf-join-btn-get > button{    
+  background-color: #2657a0;
+  border: #2657a0;
+  margin-top: 15px;
+}
+
+.faf-join-btn-get > button.btn:hover, .faf-join-btn-get > button.btn:active, .faf-join-btn-get > button.btn:focus{
+  background-color: #2657a0;
+  margin-top: 15px;
+  color: #ffffff; 
+  border: #2657a0;
+}
+
+.faf-join-btn-get > button.btn:hover > span{
+  color: #d3e0f7;
+}
+
+.faf-join-btn-get > button.btn:active{
+  background-color: #2e63b3;
+  margin-top: 15px;
+  color: #ffffff; 
+}
+
+
+.faf-container-05-a > div > div > div > div{
+  text-align: center;
+}
+
+.faf-container-05-a > div > div > div > div:first-child > div{
+  width: 43px;
+  height: 43px;
+} 
+
+.faf-container-05-a > div:first-child > div:first-child{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+  color: #354189;  
+}
+
+.social {
+  padding-top: 40px;
+  background-color: #01061b;
+}
+
+.social > div > div > div > div{
+  width: 43px;
+  height: 43px;
+  margin: 0 auto;
+}
+
+.social > div:first-child > div > div:nth-child(1) > div{
+  background: url(../images/social-icons.png) 0px 0px;
+}
+
+.social > div:first-child > div > div:nth-child(2) > div{
+  background: url(../images/social-icons.png) -43px 0px;
+}
+
+.social > div:first-child > div > div:nth-child(3) > div{
+  background: url(../images/social-icons.png) -86px 0px;
+}
+
+.social > div:first-child > div > div:nth-child(4) > div{
+  background: url(../images/social-icons.png) -129px 0px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(1) > div{
+  background: url(../images/social-icons.png) -172px 0px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(2) > div{
+  background: url(../images/social-icons.png) -215px 0px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(3) > div{
+  background: url(../images/social-icons.png) -258px 0px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(4) > div{
+  background: url(../images/social-icons.png) -301px 0px;
+}
+
+/*social icons hover*/
+
+.social > div:first-child > div > div:nth-child(1) > div:hover{
+  background: url(../images/social-icons.png) 0px -43px;
+}
+
+.social > div:first-child > div > div:nth-child(2) > div:hover{
+  background: url(../images/social-icons.png) -43px -43px;
+}
+
+.social > div:first-child > div > div:nth-child(3) > div:hover{
+  background: url(../images/social-icons.png) -86px -43px;
+}
+
+.social > div:first-child > div > div:nth-child(4) > div:hover{
+  background: url(../images/social-icons.png) -129px -43px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(1) > div:hover{
+  background: url(../images/social-icons.png) -172px -43px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(2) > div:hover{
+  background: url(../images/social-icons.png) -215px -43px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(3) > div:hover{
+  background: url(../images/social-icons.png) -258px -43px;
+}
+
+.social > div:nth-child(2) > div > div:nth-child(4) > div:hover{
+  background: url(../images/social-icons.png) -301px -43px;
+}
+
+
+.social{
+  background-color:#01061b !important;
+}
+
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.faf-container-05-b{  
+  min-height: 310px;
+  width: 100%;
+  border-top: solid thin #283165;
+}
+
+.faf-container-05-b > div > div{
+  height: 100%;
+}
+
+.faf-container-05-b > div > div > span{
+  color: #354189;
+  font-size: 17px;
+}
+
+.faf-container-05-b > div > div > ul{
+  font-size: 14px;
+  list-style-type: none;
+  list-style:none;
+  padding-left:0;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.faf-container-05-b > div > div > ul > li a{
+  color: #354189; 
+}
+
+.faf-container-05-b > div > div > ul > li a:hover{
+  color: #1d7ab7;  
+}
+
+#faf-main-container{
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+
+@media only screen and (max-width: 380px) {
+  .faf-logo, .faf-logo img{
+  width: 200px;
+  }
+
+}
+
+
+/*footer */
+
+#faf-footer{
+  width: 100%;
+  height: 60px;
+  background-color: #2657a0; 
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top:-60px;
+  position: fixed;
+  z-index: 99;
+}
+
+/*Login Page CSS*/
+
+#faf-login-body{
+  min-height: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#faf-login-body > div{
+  min-height: 440px;
+}
+
+div#faf-login-body{
+  max-width: 440px;
+  margin: 0 auto;
+  padding-top: 8%;
+}
+
+.faf-form-group label{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.faf-form-group label > span{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.faf-form-group > div{
+  padding-top: 20px;
+}
+
+#faf-login-body > div > div:first-child{
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.faf-login-submit{
+  width:40%;  
+  float: left;
+  height: 40px;
+  padding-top: 30px !important;
+}
+
+.faf-checkbox{
+  margin-top: 16px;
+  padding-left: 20px;
+  float: left;
+}
+
+.faf-checkbox > label > input{  
+  float: left;
+}
+
+.faf-checkbox > label > div{  
+  float: left;
+  padding-left: 10px;
+}
+
+.faf-forgot{
+  padding-top: 40px !important;
+  clear: both;
+}
+
+/* Sign up Page css */
+
+
+#faf-signup-body{
+  position: relative;  
+  min-height: 100%;
+  height: 100%;
+}
+
+#faf-signup-body > div:first-child{
+  width: 100%;
+  position: absolute;
+  z-index: 1; 
+}
+
+#faf-signup-body > div:first-child > div{
+  min-height: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 5%;
+  max-width: 1170px;
+  margin: 0 auto;  
+  color: #777777;
+  position: relative;  
+}
+
+#faf-signup-body > div:first-child > div > div:first-child{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#faf-signup-body > div:first-child > div > div:first-child, #faf-signup-body > div:first-child > div{
+  text-align: center;
+}
+
+.faf-sp-col > div{
+  padding: 0;
+}
+
+.faf-sp-col > div > div{
+
+}
+
+.faf-sp-col > div > div:nth-child(1){
+   padding-top: 40px;
+}
+
+.faf-sp-col >div:nth-child(1) > div:nth-child(1) > div{
+  background: url(../images/social-icons.png) -347px 0px;
+  width: 89px;
+  height: 101px;
+  margin: 0 auto;
+}
+
+.faf-sp-col >div:nth-child(2) > div:nth-child(1){
+  background: url(../images/social-icons.png) -526px  0px;
+  width: 2px;
+  height: 110px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+.faf-sp-col >div:nth-child(2) > div:nth-child(3){
+  background: url(../images/social-icons.png) -526px  0px;
+  width: 2px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.faf-sp-col >div:nth-child(1) > div:nth-child(2), .faf-sp-col >div:nth-child(3) > div:nth-child(2){
+  font-size: 22px;
+  font-weight: 900;
+  padding-top: 15px;
+}
+
+.faf-sp-col >div:nth-child(1) > div:nth-child(3), .faf-sp-col >div:nth-child(3) > div:nth-child(3){
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 150px;
+  padding-top: 30px; 
+}
+
+.faf-sp-col >div:nth-child(1) > div:nth-child(4), .faf-sp-col >div:nth-child(3) > div:nth-child(4){
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 120px;
+  padding-top: 10px; 
+  padding-bottom: 100px;
+}
+
+.faf-sp-col >div:nth-child(1) > div:nth-child(4) > div > button, .faf-sp-col >div:nth-child(3) > div:nth-child(4)  > div > button {
+  background-color: #2657a0;
+  border: #2657a0;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.faf-sp-col >div:nth-child(2) > div:nth-child(2){
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.faf-sp-col > div:nth-child(1) > div,.faf-sp-col > div:nth-child(3) > div{
+  max-width: 360px; 
+  margin: 0 auto;
+}
+
+.faf-sp-col >div:nth-child(3) > div:nth-child(1) > div{
+  background: url(../images/social-icons.png) -437px  0px;
+  width: 89px;
+  height: 101px;
+  margin: 0 auto;
+}
+
+.faf-join-btn-header > span{
+  display: inline-block;
+  padding-right: 20px;
+  color: #d4d4d4;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.glyph-q{
+  float: left;
+}
+
+.glyph-q:nth-child(2){
+  padding-left:6px;
+}
+
+.faf-ref-button{
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  cursor:pointer;
+}
+
+#faf-signup-work-join span{
+  font-weight: 700;
+}
+
+#faf-signup-work-join{
+  background-color: #2657a0;
+  border: #2657a0;
+  color: #ffffff;
+}
+
+#faf-signup-work-join:hover{
+  
+}
+
+#faf-work-popup{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/darkbackground.png");
+  z-index: 2;
+}
+
+#faf-work-pop-container{
+  max-width: 380px;
+  float: right;
+  background-color: #282828;
+  min-height: 100%;
+  position: relative; 
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#faf-work-pop-container > div:nth-child(1) > div:nth-child(1){
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#faf-work-pop-container > div:nth-child(1) > div:nth-child(2){
+  text-align: right;
+  font-size: 20px;
+}
+
+#faf-work-pop-container > div:nth-child(1) > div:nth-child(2) > span:hover{
+  color: #26569f;
+  cursor: pointer;
+}
+
+#faf-work-pop-container > div:nth-child(1) > div:nth-child(2) > span:hover{
+  color: #26569f;
+  cursor: pointer;
+}
+
+#faf-work-pop-container > div:nth-child(3){
+  padding-top:10px;
+  font-weight: 400;
+  text-align: center;  
+}
+
+#faf-work-pop-container > div:nth-child(3) > a{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+#faf-work-pop-container > div:nth-child(n+4){
+  padding-top: 15px;
+  font-size: 16px;  
+}
+
+#faf-work-pop-container > div:nth-child(n+4){
+  font-weight: 700;
+}
+
+#faf-work-pop-container > div:nth-child(9){
+  padding-top: 35px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#faf-work-pop-container > div:nth-child(1){
+  width: 100%;
+  display: inline-block;
+}
+
+#faf-work-pop-container > div:nth-child(2){
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#faf-work-pop-container > div:nth-child(2) > span{
+  font-style: italic;
+  font-size: 22px;
+}
+
+#faf-work-pop-container > div:nth-child(10){
+  padding-bottom: 100px;
+}
+
+#faf-work-pop-container > div:nth-child(4){
+  max-width: 80px
+}
+
+
+/* Sign up */
+
+
+#faf-select-popup{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/darkbackground.png");
+  z-index: 2;
+}
+
+#faf-select-pop-container{
+  max-width: 380px;
+  float: right;
+  background-color: #282828;
+  min-height: 100%;
+  position: relative; 
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#faf-select-pop-container > div:nth-child(1) > div:nth-child(1){
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#faf-select-pop-container > div:nth-child(1) > div:nth-child(2){
+  text-align: right;
+  font-size: 20px;
+}
+
+#faf-select-pop-container > div:nth-child(1) > div:nth-child(2) > span:hover{
+  color: #26569f;
+  cursor: pointer;
+}
+
+#faf-select-pop-container > div:nth-child(1) > div:nth-child(2) > span:hover{
+  color: #26569f;
+  cursor: pointer;
+}
+
+#faf-select-pop-container > div:nth-child(3){
+  padding-top:10px;
+  font-weight: 400;
+  text-align: center;  
+}
+
+#faf-select-pop-container > div:nth-child(3) > a{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+#faf-select-pop-container > div:nth-child(n+4){
+  padding-top: 15px;
+  font-size: 16px;  
+}
+
+#faf-select-pop-container > div:nth-child(n+4){
+  font-weight: 700;
+}
+
+#faf-select-pop-container > div:nth-child(10){
+  padding-top: 35px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#faf-select-pop-container > div:nth-child(1){
+  width: 100%;
+  display: inline-block;
+}
+
+#faf-select-pop-container > div:nth-child(2){
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#faf-select-pop-container > div:nth-child(2) > span{
+  font-style: italic;
+  font-size: 22px;
+}
+
+#faf-select-pop-container > div:nth-child(10){
+  padding-bottom: 100px;
+}
+
+#faf-select-pop-container > div:nth-child(4){
+  max-width: 80px
+}
+
+#faf-signup-select-join span{
+  font-weight: 700;
+}
+
+#faf-signup-select-join{
+  background-color: #2657a0;
+  border: #2657a0;
+  color: #ffffff;
+}
+
+#faf-signup-select-join:hover{
+
+}
+
+/* Signup Work CSS */
+
+#faf-signup-work-body{
+  position: relative;  
+  min-height: 100%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+/*  max-width: 800px;*/
+
+}
+
+.faf-signup-w-map > div{
+  width: 638px;
+  height: 424px;
+  background: url(../images/sign-up-work.jpg) -145px 0px;
+}
+
+#faf-signup-work-next {
+  max-width: 150px;
+  font-weight: 700;
+  background-color: #2657a0;
+  border: #2657a0;
+  color: #ffffff;
+}
+
+#faf-signup-work-back2 {
+  max-width: 150px;
+  font-weight: 700;
+  background-color: #2657a0;
+  border: #2657a0;
+  color: #ffffff;
+}
+
+.faf-signup-work-next-div{
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.glyphicon-user{  
+  padding-right: 10px;
+}
+
+.faf-signup-w-main-title > div{
+  text-align: center;  
+}
+
+.faf-signup-w-main-title > div:nth-child(1){
+  font-size: 23px;
+  padding-top:25px;
+}
+
+.faf-signup-w-main-title > div:nth-child(2){
+  font-size: 18px;
+}
+
+.faf-signup-w-main-title > div:nth-child(3){
+  font-size: 29px;
+  padding-top:20px;
+}
+
+.faf-signup-w-industry{
+  padding-top: 15px;
+}
+
+.faf-signup-w-industry > div:nth-child(1){
+  font-size: 21px;
+  text-align: center;
+}
+
+.faf-signup-w-industry > div > label{
+  padding-left:30px;
+  font-size: 15px;
+}
+
+#faf-signup-w-cc{
+  font-weight: 700;
+}
+
+#faf-signup-w-cc .checkbox label{
+ font-weight: 700; 
+}
+
+.glyphicon-plus{
+  padding-right: 8px;
+}
+
+#faf-signup-w-cc-speech{
+  max-width: 400px !important;
+  position: relative;
+}
+
+#faf-signup-w-cc-speech > div{
+  position: absolute;
+}
+
+#faf-signup-w-cc-form{
+  max-width: 100% !important;
+}
+
+#faf-signup-w-cc-speech > div{
+  background-image: url('../images/tadpole01.jpg');
+  width: 380px;
+  height: 440px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  margin-top: 60px;
+
+}
+
+#faf-signup-w-cc-form div{
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+#faf-signup-w-cc-form > div:nth-child(1){
+  font-size: 23px;
+  padding-top: 30px;
+  position: relative;
+  clear: both;
+  text-align: left;
+}
+
+#faf-signup-w-cc-form > div:nth-child(n+2){
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #d1e0f7;
+  border-radius: 5px;
+}
+
+div.faf-signup-w-title{
+  margin: 0 !important;
+  padding: 0px !important;
+  padding-top: 30px !important;
+  font-size: 23px !important;
+  background-color: #eff1f6 !important;
+}
+
+.faf-signup-work-next-div{
+  margin-top:50px !important;
+  margin-bottom: 50px !important;
+  background-color: #eff1f6  !important;
+  float: right !important;
+  max-width: 200px !important;
+}
+
+.faf-signup-w-upload-photo > div:nth-child(1){
+  width: 145px;
+  height: 146px;
+  background: url(../images/sign-up-work.jpg) 0px 0px;  
+}
+
+.faf-signup-w-upload-photo > div {
+  display: inline-block;
+}
+
+.faf-signup-w-upload-photo > div:nth-child(2) {
+  position: absolute;
+  padding: 20px;
+}
+
+.faf-signup-w-upload-photo > div:nth-child(2) > div {
+  padding-top: 8px;
+}
+
+.faf-signup-w-upload-photo > div:nth-child(2) > div:nth-child(1) {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.faf-signup-w-upload-photo > div > div > span{
+  padding-left: 15px;  
+  font-size: 15px;
+  font-weight: 700;
+}
+
+select, input[type=text]{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.faf-paddingtop15{
+  padding-top: 15px;
+}
+
+.faf-su-w-addexp, .faf-su-w-uploadmore, .faf-s-w-up-more-cert{
+  display: block;
+  width: 100%;
+  text-align: right;
+  color: #2657a0;
+}
+
+.faf-su-w-addexp:hover, .faf-su-w-uploadmore:hover, .faf-s-w-up-more-cert:hover{
+  cursor: pointer;
+  color: #3576d7;
+}
+
+.faf-signup-work-cert{
+  padding-top: 10px;
+}
+
+
+.faf-signup-work-cert > span{
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.faf-signup-w-cert-div, .faf-signup-w-cert-hid{
+  background-color: #e3ecfa;
+  padding: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top:10px;
+}
+
+.faf-signup-w-remove-exp{
+  float: right;
+  display: block;
+  padding-right: 10px;
+}
+
+.faf-signup-w-remove-exp:hover{
+  cursor: pointer;
+  color: #3576d7;
+}
+
+#faf-signup-w-cc-speech > div > div{
+  padding: 45px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  padding-right: 30px;
+  color: #2657a0;
+}
+
+#faf-s-w-hidden-div{
+  display: none;
+}
+
+
+.faf-s-agency{
+  background: url(../images/social-icons.png) 0px -93px !important;
+  width: 121px !important;
+  height: 80px !important;
+  margin: 0 auto;
+  margin-top: 21px !important;
+}
+
+.faf-s-w-title{
+/*  max-width: 150px;*/
+
+}
+
+
+
+/* BOOTSTRAP ICON INTEGRATION IN TEXTBOX START RIGHT */
+.faf-right-inner-addon {
+    position: relative;
+}
+.faf-right-inner-addon input {
+    padding-right: 30px;    
+}
+.faf-right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+/* BOOTSTRAP ICON INTEGRATION IN TEXTBOX END */
+
+/*reset divs start */
+
+.faf-signup-w-exp1, .faf-signup-w-cert-u1{
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #e3ecfa !important;
+}
+
+/*reset*/
+
+
+/* Signup Work End */
+
+/* change text color to light gray span */
+
+span.faf-txtlighgrey{
+  color: #a7a7a7;
+}
+/* end change text color to light gray span */
+
