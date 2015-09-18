@@ -1529,18 +1529,20 @@ div#faf-login-body{
 
 #faf-signup-w-cc-speech > div{
   background-image: url('../images/tadpole01.jpg');
-  width: 380px;
-  height: 440px;
+      height: 440px;
   padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
-  margin-top: 60px;
+/*  padding-right: 10px;*/
+  position: absolute;
+  margin-top: 39px;
+  background-repeat:no-repeat;
+}
+
+#faf-signup-w-upload-photo > div > div:nth-child(2){
 
 }
 
 #faf-signup-w-cc-form div{
-  font-size: 13px;
-  margin-bottom: 0px;
+
 }
 
 #faf-signup-w-cc-form > div:nth-child(1){
@@ -1548,7 +1550,7 @@ div#faf-login-body{
   padding-top: 30px;
   position: relative;
   clear: both;
-  text-align: left;
+  text-align: center;
 }
 
 #faf-signup-w-cc-form > div:nth-child(n+2){
@@ -1660,12 +1662,21 @@ select, input[type=text]{
   color: #3576d7;
 }
 
+#faf-signup-w-cc-speech{
+padding-right: 0px;
+}
+
+#faf-signup-w-cc-form{
+padding-left: 0px;
+}
+
 #faf-signup-w-cc-speech > div > div{
-  padding: 45px;
+  padding-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 15px;
   font-style: italic;
-  font-weight: 700;
-  padding-right: 30px;
+  font-weight: 700;  
   color: #2657a0;
 }
 
@@ -1701,7 +1712,7 @@ div.faf-whitebg{
   width: 513px;
 }
 
-.nicEdit-main:focus, .nicEdit-main:active{
+textarea#area1:focus, textarea#area1:active, .nicEdit-main:focus, .nicEdit-main:active{
    outline: 0;
 }
 

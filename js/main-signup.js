@@ -91,7 +91,13 @@
     $dc.on("click", "#faf-s-w-add-exp", function(){
         if (addexp<=50){
 
-            $('.faf-signup-w-exp1').before($('<div>').fadeOut(0).fadeIn().load('sign-up-work-cc.html .faf-signup-w-exp-hid'));
+//$('.faf-signup-w-exp1').before($('<div>').fadeOut(0).fadeIn().load('sign-up-work-cc.html .faf-signup-w-exp-hid'));      
+            $('.faf-signup-w-exp1').before($('<div>').fadeOut(0).fadeIn().load("sign-up-work-cc.html .faf-signup-w-exp-hid", function(){
+                //e.preventDefault();
+                //alert("added!");
+                $('.dp2').datepicker({format: 'dd-mm-yyyy'}); 
+
+            }));            
 
             addexp++;
             return false;
@@ -111,7 +117,7 @@
         else alert('Only maximum of 5 can be added.');
     });
 
-   
+
     $dc.on("click", "#faf-s-w-add-cert", function(){
         if (addcert<=50){
 
@@ -153,10 +159,12 @@
 
 /* ADD EXP AND CERT END */
 
-    function slideSpeech(currentpos){
+    function slideSpeech(currentpos, offset){
         var position = $(currentpos).offset();
-        var pos = position.top;
-        $("#faf-signup-w-cc-speech > div").animate({top: pos-300}, 200);
+        var pos = position.top, pos2 = 0;
+        if (offset == "offset"){pos2 = 10;};
+        pos = pos - pos2;
+        $("#faf-signup-w-cc-speech > div").animate({top: pos-275}, 200);
     }
 
     $replace = $('.faf-buble-replace');
@@ -203,7 +211,9 @@
     });
 
     $dc.on("click", ".faf-signup-w-exp-hid", function(){
-        slideSpeech(this);        
+        // $('.dp2').datepicker({format: 'dd-mm-yyyy'});  
+        var offset = "offset";
+        slideSpeech(this, offset);        
         $('.faf-buble-replace').text('"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"');              
     });
 
@@ -213,9 +223,8 @@
     });
 
     $dc.on("click", ".faf-signup-w-cert-u-hid", function(){
-        // var position = $('.faf-signup-w-cert-upload');
-        // slideSpeech(position);
-        slideSpeech(this);
+        var offset = "offset";
+        slideSpeech(this, offset);   
         $('.faf-buble-replace').text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat, est laborum"');  
     });
 
@@ -259,23 +268,40 @@
 
     // end sign up button
 
+    $('.dp1').datepicker({format: 'dd-mm-yyyy'});
+
+
     //tooltip
        $("[data-toggle='tooltip']").tooltip(); 
     // end tooltip
 
 	//end signup js
 
+
+
 })();
 
 $(window).load(function () {
-    $('#dp1').datepicker({format: 'dd-mm-yyyy'});
-    $('#dp2').datepicker({format: 'dd-mm-yyyy'});
-    $('#dp3').datepicker({format: 'dd-mm-yyyy'});
 
+    // $('.dp2').datepicker({format: 'dd-mm-yyyy'});
+    // $('#datep1').datepicker({format: 'dd-mm-yyyy'});      
+    // $('#datep2').datepicker({format: 'dd-mm-yyyy'});      
+});
 
-//bkLib.onDomLoaded(function() {
-    new nicEditor({iconsPath : 'images/nicEditorIcons.gif'}).panelInstance('area1');
-
+// $(document).bind("sign-up-work-cc.html .faf-signup-w-exp-hid", function(){
+//     $('#datep1').datepicker({format: 'dd-mm-yyyy'});
+//     $('#datep2').datepicker({format: 'dd-mm-yyyy'});
 // });
-        
+
+$(window).ready(function(){
+
+    if ( $( "#faf-signup-w-exp-hid2" ).is( ".faf-signup-w-exp-hid" ) ) {
+        alert('readynow');
+    }
+
+});
+
+
+bkLib.onDomLoaded(function() {
+    new nicEditor({iconsPath : 'images/nicEditorIcons.gif'}).panelInstance('area1');
 });
